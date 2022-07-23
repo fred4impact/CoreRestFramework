@@ -1,0 +1,126 @@
+Packages
+***************
+pojo
+runner
+stepdefinitions -
+utils - BaseSetUp/PayloadSetUp
+features
+
+*************************
+How the Framework folder structur & Flows
+**************************
+SRC/TEST/JAVA
+ >>> Pojo package
+ >>> runner Package
+ >>> stepDefinitions
+ >>> utils
+ SRC/TEST/resources
+ >>>features/PostScenario
+ config.properties
+ cucumber.properties
+ junit-platform.properties
+ CoreRestFramework
+ >>logback.xml
+ >>logger.txt
+
+***************************************
+StepDefinition/stepdefinitions extends the baseSetUp
+PayloadSetUp- Initialize the PayloadSample class
+logger.txt
+utils / BaseSetUp/ BuildTestData
+Resource/PostScenario/ GetScenario
+Runner/TestRunner
+Pojo/JsonPost
+*****************************************
+*****************************************
+
+
+*************************************************************
+RESOURCES ON WHICH FRAMEWORK WAS BASED
+https://62d991d35d893b27b2e9a6ac.mockapi.io/rest/api/v1/products
+Supported Methods:
+Get, post , put , delete , options
+
+***************************** **********************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+ENDPOINTS
+
+Validate these from  GET http://jsonplaceholder.typicode.com/users
+
+
+ "username": "Bret",
+  "email": "Sincere@april.biz",
+
+
+
+
+
+
+
+
+
+*****************************
+POST "https://gorest.co.in/public/v2/users
+*****************************
+
+Accept:application/json"
+ "Content-Type:application/json"
+ "Authorization: Bearer ACCESS-TOKEN"
+ POST "https://gorest.co.in/public/v2/users" -d '{"name":"Tenali Ramakrishna", "gender":"male", "email":"tenali.ramakrishna@15ce.com", "status":"active"}'
+
+
+ payload = {"name":"Tenali Ramakrishna", "gender":"male", "email":"tenali.ramakrishna@15ce.com", "status":"active"}
+
+
+
+
+
+
+
+
+
+
+
+
+ //package stepDefinitions;
+ //
+ //import io.cucumber.java.en.Given;
+ //import io.cucumber.java.en.Then;
+ //import io.cucumber.java.en.When;
+ //
+ //public class GetStepDef {
+ //
+ //
+ //    @Given("^API (.*) endpoint is initialised$")
+ //    public void api_https_api_microbrewery_org_breweries_endpoint_is_initialised(String url) {
+ //
+ //    }
+ //
+ //    @When("I call breweries API with GET Request method")
+ //    public void i_call_breweries_api_with_get_request_method() {
+ //
+ //    }
+ //
+ //    @Then("^I should receive a success with status (.*)")
+ //    public void i_should_receive_a_success_with_status(Integer int1) {
+ //
+ //    }
+ //
+ //    @Then("^Response json body contains a (.*)$")
+ //    public void response_json_body_contains_a_antonette(String values) {
+ //
+ //    }
+ //
+ //}
